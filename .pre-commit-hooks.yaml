@@ -1,0 +1,7 @@
+- id: terraform-docs-readme
+  name: Add Terraform Docs to README
+  description: Add auto-generated input/output docs (using terraform-docs) to predefined section in README
+  entry: terraform-docs-readme
+  language: script
+  files: '^.*\.tf$'
+
