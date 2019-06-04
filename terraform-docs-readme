@@ -19,4 +19,4 @@ sed $_SEDOPTS '/TFDOCS_START/,/TFDOCS_END/{//!d;};' README.md
 terraform-docs --sort-inputs-by-required --with-aggregate-type-defaults md table . | sed $_SEDOPTS "${line_number}r /dev/stdin" README.md
 
 # If a temporary README was created (by sed on MacOS), clean up
-[[ -r "README.md.tmp" ]] && rm README.md.tmp
+[[ -e "README.md.tmp" ]] && rm README.md.tmp
